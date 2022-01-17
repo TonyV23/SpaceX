@@ -1,0 +1,19 @@
+{
+  "name": "spacex",
+  "version": "1.0.0",
+  "description": "A website presenting the elements of space",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyV23/SpaceX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyV23/SpaceX/issues"
+  },
+  "homepage": "https://github.com/TonyV23/SpaceX#readme"
+}
