@@ -15,6 +15,17 @@ body{
     color : $white;
     background :url("./media/background.jpg") no-repeat 50% 50%;
     background-size: cover;
+
+    &::before{
+        content: " ";
+        background: #000000;
+        background: linear-gradient(168deg,#000000 0%, transparent 100%);
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        position: absolute;
+        z-index: 0;
+    }
 }
 
 li{
@@ -69,7 +80,7 @@ a{
     border-radius: 45%/60px 100px 0 0;
     border-color: $orange transparent transparent transparent;
     position: absolute;
-    top: 80px;
-    left: 13%;
+    top: 60px;
+    left: 10%;
 
 }
