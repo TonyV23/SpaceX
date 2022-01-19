@@ -9,6 +9,7 @@ body {
   color: #F3F0F0;
   background: url("./media/background.jpg") no-repeat 50% 50%;
   background-size: cover;
+  box-sizing: border-box;
   /************************************/
 }
 body:before {
