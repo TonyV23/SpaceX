@@ -203,5 +203,34 @@ body .perspective span {
   color: #F3F0F0;
   top: -48px;
 }
+.button footer {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+}
+.button .network {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+  font-family: "Megrim", crusive;
+}
+.button .network a {
+  padding: 0px 25px;
+}
+@media (max-width: 840px) {
+  .button .network a {
+    padding: 0px 5px;
+  }
+}
+.button .network a:hover {
+  transform: scale(2.5);
+  transition: 0.4s ease-out;
+  text-shadow: 0 0 5px #F3F0F0, 0 0 10px #F3F0F0, 0 0 15px #F3F0F0, 0 0 20px #fa9e1e, 0 0 30px #fa9e1e, 0 0 40px #fa9e1e, 0 0 55px #fa9e1e, 0 0 75px #fa9e1e;
+}
+.button .network a:hover:nth-child(5) {
+  transform: scale(1.1);
+  font-weight: bolder;
+}
 
 /*# sourceMappingURL=style.css.map */
