@@ -173,4 +173,11 @@ body .perspective span {
   transform: translateZ(35px);
 }
 
+.button {
+  padding-top: 60px;
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+}
+
 /*# sourceMappingURL=style.css.map */
