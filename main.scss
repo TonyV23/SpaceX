@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Baumans&family=Comforter+Brush&family=Dancing+Script&family=Megrim&display=swap');
 
-$white: #f5f0d6;
+$white: #F3F0F0;
 $blue: #84c1ff;
-$red: #fa1111;
-$orange : #f8a407;
+$red: #ff1808;
+$orange: #fa9e1e;
 
 body{
     margin: 0;
@@ -15,6 +15,16 @@ body{
     color : $white;
     background :url("./media/background.jpg") no-repeat 50% 50%;
     background-size: cover;
+
+    &:before {
+        content:'';
+        background: #000000;
+        background: linear-gradient(168deg,#000000 0%, transparent 100%);
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        position: absolute;
+        z-index: 0;
 }
 
 li{
@@ -22,7 +32,7 @@ li{
 }
 a{    
     text-decoration: none;
-        & :visited{ color : $white}
+        &:visited{ color : $white}
 }
 
 //////////////////  header //////////////////////////
@@ -156,4 +166,5 @@ a{
         font-weight: 600;
         transform: translateZ(35px);
     }   
+}
 }
