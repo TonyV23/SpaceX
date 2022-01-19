@@ -100,3 +100,25 @@ a{
     95% {right: 100%;}
     100% {right: 0%;}
 }
+
+///princing
+.offers{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.perspective{
+    width: 100%;
+    perspective: 800px;
+    display: flex;
+    justify-content: space-between;
+
+    &__3d{
+        width: 140px;
+        height: 200px;
+        margin: auto;
+        box-shadow: 0 720px 63px -60px #494848;
+        transform-style: preserve-3d;
+        transition: transform 0.05s linear;
+    }
+}
