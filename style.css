@@ -179,5 +179,28 @@ body .perspective span {
   margin: 0 auto;
   width: 320px;
 }
+.button:hover .button__rect {
+  stroke-dasharray: 760;
+  stroke-dashoffset: 0;
+  stroke-width: 2px;
+}
+.button__rect {
+  fill: transparent;
+  stroke: #fa9e1e;
+  border-bottom: 5px solid #fa9e1e;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -470;
+  stroke-width: 8px;
+}
+.button__text {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #F3F0F0;
+  top: -48px;
+}
 
 /*# sourceMappingURL=style.css.map */

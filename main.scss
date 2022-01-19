@@ -169,9 +169,39 @@ a{
 }
 }
 
+// une mixine ("morceau de code parametre mais reutilisable ")
+@mixin dash ($array, $offset, $width){
+    stroke-dasharray: $array;
+    stroke-dashoffset: $offset;
+    stroke-width: $width;
+}
 .button{
     padding-top: 60px;
     position: relative;
     margin: 0 auto;
     width: 320px;
+
+    &:hover
+        &__rect{
+            @include dash(760, 0, 2px)
+        }   
+
+    &__rect{
+        fill: transparent;
+        stroke: $orange;
+        border-bottom: 5px solid $orange;
+
+        transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+        @include dash(140 540, -470, 8px)
+    }
+    &__text{
+        position: relative;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 8px;
+        color: $white;
+        top: -48px;
+    }
+
 }
